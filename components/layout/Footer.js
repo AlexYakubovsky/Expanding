@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div>
+    <footer style={{marginLeft: '250px'}}>
       Footer
-    </div>
+    </footer>
   )
 }
 

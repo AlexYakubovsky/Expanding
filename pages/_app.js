@@ -1,5 +1,10 @@
-import '../styles/globals.css'
+import AppProvider from '../contexts/AppProvider'
+import '../styles/styles.sass'
 
-const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />
-
-export default MyApp
+export default function App({ Component, pageProps }) {
+  return (
+    <AppProvider>
+      <Component {...pageProps} />
+    </AppProvider>
+  )
+}

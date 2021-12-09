@@ -1,17 +1,14 @@
 import { useAlert } from '../contexts/alert/AlertContext'
 import Layout from '../components/layout/Layout'
-import Button from './Button'
+import Button from '../components/Button'
 
-const Index = () => {
+export default function Index () {
   const { show } = useAlert()
 
   return (
     <Layout title={'index'}>
-      home
       <Button text={'hello'}/>
       <button onClick={() => show('это aleeeeeeeeert')}>показать alert</button>
     </Layout>
   )
 }
-
-export default Index
